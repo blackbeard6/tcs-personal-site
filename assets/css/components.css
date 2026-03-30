@@ -1,0 +1,532 @@
+/**
+ * Components CSS - Navbar, Hamburger, Slideshow, etc.
+ */
+
+/* ============================================
+   Navbar
+   ============================================ */
+[data-component="navbar"] {
+    position: relative;
+    z-index: 400;
+}
+
+.header {
+    position: relative;
+    z-index: 400;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vw;
+}
+
+.navbar-name {
+    display: flex;
+    align-items: center;
+    padding-left: 2vw;
+}
+
+.navbar-hamburger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10vw;
+    height: 10vw;
+    cursor: pointer;
+    z-index: 500;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .header {
+        height: 20vw;
+    }
+
+    .navbar-hamburger {
+        width: 20vw;
+        height: 20vw;
+    }
+}
+
+.navbar {
+    font-family: var(--font-primary);
+    font-weight: var(--font-weight-bold);
+    font-style: normal;
+    font-size: 2vw;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--color-bg);
+    color: var(--color-primary);
+}
+
+.nav-name {
+    color: var(--color-primary);
+    font-family: var(--font-primary);
+    font-weight: var(--font-weight-bold);
+    letter-spacing: -0.12rem;
+    font-style: italic;
+    font-size: 3vw;
+    -webkit-text-stroke-width: .05vw;
+    -webkit-text-stroke-color: var(--color-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 1000px) {
+    .nav-name {
+        font-size: 6vw;
+    }
+}
+
+.nav-text {
+    color: var(--color-primary);
+    font-family: var(--font-primary);
+    font-weight: var(--font-weight-bold);
+    font-style: normal;
+    font-size: 2vw;
+    -webkit-text-stroke-width: .05vw;
+    -webkit-text-stroke-color: var(--color-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item {
+    justify-content: center;
+    align-items: center;
+    vertical-align: center;
+    aspect-ratio: 1 / 1;
+    position: relative;
+    color: var(--color-primary);
+    display: flex;
+    margin: auto;
+    font-family: var(--font-primary);
+    font-weight: var(--font-weight-bold);
+    font-size: 2vw;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--color-bg);
+}
+
+[class*="nav-10"] {
+    float: left;
+    box-shadow: var(--box-shadow-inset);
+    width: 10%;
+    justify-content: center;
+    align-items: center;
+    vertical-align: center;
+    aspect-ratio: 1 / 1;
+    position: relative;
+    color: var(--color-primary);
+    display: flex;
+    margin: auto;
+    font-family: var(--font-primary);
+    font-weight: var(--font-weight-bold);
+    font-size: 2vw;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--color-bg);
+}
+
+[class*="nav-10"]:hover {
+    background-color: var(--color-primary);
+}
+
+.nav-10-0 {
+    float: left;
+    position: relative;
+    box-shadow: var(--box-shadow-inset);
+    width: 10%;
+    justify-content: center;
+    align-items: center;
+    vertical-align: center;
+    aspect-ratio: 1 / 1;
+    color: var(--color-primary);
+    display: flex;
+    margin: auto;
+    font-family: var(--font-primary);
+    font-weight: var(--font-weight-bold);
+    font-size: 2vw;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--color-bg);
+}
+
+#navbar-img {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: auto;
+    filter: drop-shadow(2px 2px 0 var(--color-bg))
+            drop-shadow(-2px -2px 0 var(--color-bg));
+}
+
+/* ============================================
+   Hamburger Menu
+   ============================================ */
+.hamburger {
+    display: block;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 4vw;
+    height: 0.4vw;
+    margin: 0.5vw auto;
+    -webkit-transition: var(--transition-fast);
+    transition: var(--transition-fast);
+    background-color: var(--color-black);
+}
+
+@media only screen and (max-width: 1000px) {
+    .bar {
+        width: 8vw;
+        height: 0.8vw;
+        margin: 1vw auto;
+    }
+}
+
+.hamburger-col {
+    width: 20%;
+    aspect-ratio: 1 / 1;
+    float: left;
+    position: relative;
+    box-shadow: var(--box-shadow-inset);
+    display: flex;
+    margin: auto;
+}
+
+#hamburger-img {
+    display: none;
+}
+
+#hamburger-item {
+    color: var(--color-primary);
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    vertical-align: center;
+    font-family: var(--font-primary);
+    font-weight: var(--font-weight-bold);
+    font-size: 2vw;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--color-bg);
+}
+
+#hamburger-link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* ============================================
+   Link Overlay (clickable areas)
+   ============================================ */
+.link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* ============================================
+   Slideshow
+   ============================================ */
+.slideshow-container {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    font-family: var(--font-primary);
+    font-weight: var(--font-weight-bold);
+    font-style: normal;
+    font-size: x-large;
+    letter-spacing: 0.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    height: auto;
+    max-width: 100%;
+}
+
+.slide-caption {
+    color: var(--color-bg);
+    font-size: 1.6vw;
+    padding: .5vw;
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.numbertext {
+    color: var(--color-bg);
+    font-size: 1vw;
+    padding: 3vw;
+    position: absolute;
+    text-align: left;
+    top: 0;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 2.0s;
+}
+
+@keyframes fade {
+    from { opacity: .4 }
+    to { opacity: 1 }
+}
+
+@media only screen and (max-width: 300px) {
+    .text { font-size: 11px }
+}
+
+/* ============================================
+   Welcome Message (Home Page)
+   ============================================ */
+.welcome-msg {
+    position: absolute;
+    bottom: 40%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50vw;
+    background-color: var(--color-bg);
+    z-index: 300;
+    color: var(--color-primary);
+    font-family: var(--font-primary);
+    font-weight: var(--font-weight-bold);
+    font-style: normal;
+    font-size: 10vw;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--color-bg);
+    padding-left: 1em;
+    border: var(--border-width-double) solid black;
+}
+
+/* ============================================
+   Floating Content Panels
+   ============================================ */
+.floating-panel {
+    position: fixed;
+    background-color: var(--color-bg);
+    z-index: 300;
+    border: var(--border-width-double) solid black;
+    padding: 3vh 2vw;
+    width: 42%;
+    top: calc(10vw + 5%);
+    height: calc(100vh - 10vw - 10%);
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.floating-panel p {
+    font-size: min(1.8vh, 1.1vw);
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+.floating-panel .slideshow-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.floating-panel .mySlides {
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.floating-panel .mySlides.active-slide {
+    display: flex;
+}
+
+.floating-panel .mySlides img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.floating-panel .slide-caption {
+    display: none;
+}
+
+.floating-panel-left {
+    left: 5%;
+}
+
+.floating-panel-right {
+    right: 5%;
+}
+
+@media only screen and (max-width: 1000px) {
+    .floating-panel {
+        position: fixed;
+        width: 90%;
+        left: 5%;
+        right: auto;
+        height: calc(45vh - 10vw);
+    }
+
+    .floating-panel-left {
+        top: calc(20vw + 2%);
+    }
+
+    .floating-panel-right {
+        top: calc(20vw + 47vh);
+    }
+
+    .floating-panel p {
+        font-size: clamp(12px, 2vw, 16px);
+    }
+
+    .floating-panel .mySlides img {
+        max-height: 90%;
+    }
+}
+
+/* ============================================
+   Project Images
+   ============================================ */
+.proj-img {
+    margin: auto;
+}
+
+#main-img {
+    width: 100%;
+    height: 100%;
+}
+
+/* ============================================
+   Typography Helpers
+   ============================================ */
+.thin-text {
+    width: 100%;
+    margin-left: 10px;
+    padding: 12px;
+    font-family: var(--font-primary);
+    font-weight: var(--font-weight-bold);
+    font-style: normal;
+    font-size: 2vw;
+    -webkit-text-stroke-width: .07vw;
+    -webkit-text-stroke-color: var(--color-bg);
+    color: var(--color-primary);
+    position: relative;
+    z-index: 10;
+}
+
+.icon {
+    display: none;
+}
+
+/* ============================================
+   Hamburger Animation
+   ============================================ */
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    -webkit-transform: translateY(0.9vw) rotate(45deg);
+    transform: translateY(0.9vw) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    -webkit-transform: translateY(-0.9vw) rotate(-45deg);
+    transform: translateY(-0.9vw) rotate(-45deg);
+}
+
+@media only screen and (max-width: 1000px) {
+    .hamburger.active .bar:nth-child(1) {
+        -webkit-transform: translateY(1.8vw) rotate(45deg);
+        transform: translateY(1.8vw) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        -webkit-transform: translateY(-1.8vw) rotate(-45deg);
+        transform: translateY(-1.8vw) rotate(-45deg);
+    }
+}
+
+/* ============================================
+   Mobile Menu Overlay
+   ============================================ */
+.mobile-menu-overlay {
+    display: none;
+    position: fixed;
+    top: 10vw;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 10vw);
+    background-color: var(--color-bg);
+    z-index: 350;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-menu-overlay.active {
+    display: flex;
+}
+
+@media only screen and (max-width: 1000px) {
+    .mobile-menu-overlay {
+        top: 20vw;
+        height: calc(100% - 20vw);
+    }
+}
+
+.mobile-menu-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.mobile-menu-link {
+    color: var(--color-primary);
+    font-family: var(--font-primary);
+    font-weight: var(--font-weight-bold);
+    font-size: 4vw;
+    text-decoration: none;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: var(--color-bg);
+}
+
+.mobile-menu-link:hover {
+    color: var(--color-accent);
+}
+
+@media only screen and (max-width: 1000px) {
+    .mobile-menu-link {
+        font-size: 8vw;
+    }
+}
+
+/* Unused - kept for reference */
+.navbar-med-expanded {
+    display: hidden;
+}
+
+.navbar-med-collapsed {
+    display: hidden;
+}

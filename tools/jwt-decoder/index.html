@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JWT Decoder | Tucker Simpson</title>
+        <link rel="stylesheet" href="../../assets/css/main.css">
+        <link rel="stylesheet" href="../../assets/css/layout.css">
+        <link rel="stylesheet" href="../../assets/css/components.css">
+        <link rel="stylesheet" href="../../assets/css/tools.css">
+        <link rel="stylesheet" href="https://use.typekit.net/mpl1bva.css">
+        <link rel="stylesheet" href="jwt-decoder.css">
+    </head>
+    <body style="margin: 0; padding: 0">
+        <!-- Navbar component -->
+        <div data-component="navbar"></div>
+
+        <div class="row">
+            <div class="col-10-20"></div>
+            <div class="col-10-20"></div>
+            <div class="col-10-20"></div>
+            <div class="col-10-20"></div>
+            <div class="col-10-20"></div>
+            <div class="col-10-0"></div>
+            <div class="col-10-0"></div>
+            <div class="col-10-0"></div>
+            <div class="col-10-0"></div>
+            <div class="col-10-0"></div>
+        </div>
+
+        <main class="tool-container">
+            <div class="row">
+                <div class="col-5-10"></div>
+                <div class="tool-content col-40-80">
+                    <h1>JWT Decoder</h1>
+                    <p class="tool-description">
+                        Decode and inspect JSON Web Tokens (JWTs). Paste a token below to see its
+                        header, payload, and signature. This tool runs entirely in your browser -
+                        no data is sent to any server.
+                    </p>
+
+                    <div class="tool-interface">
+                        <div class="tool-input-section">
+                            <label for="jwt-input">Paste JWT:</label>
+                            <textarea id="jwt-input" class="tool-textarea" rows="4"
+                                      placeholder="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"></textarea>
+                        </div>
+
+                        <div class="tool-actions">
+                            <button id="decode-btn" class="tool-button">Decode</button>
+                            <button id="clear-btn" class="tool-button tool-button-secondary">Clear</button>
+                        </div>
+
+                        <div id="jwt-output" class="jwt-output">
+                            <div class="jwt-section">
+                                <h3 class="jwt-section-title jwt-header-title">Header</h3>
+                                <pre id="jwt-header" class="jwt-section-content"></pre>
+                            </div>
+                            <div class="jwt-section">
+                                <h3 class="jwt-section-title jwt-payload-title">Payload</h3>
+                                <pre id="jwt-payload" class="jwt-section-content"></pre>
+                            </div>
+                            <div class="jwt-section">
+                                <h3 class="jwt-section-title jwt-signature-title">Signature</h3>
+                                <pre id="jwt-signature" class="jwt-section-content"></pre>
+                            </div>
+                        </div>
+
+                        <div id="jwt-error" class="tool-error" style="display: none;"></div>
+                    </div>
+                </div>
+                <div class="col-5-10"></div>
+            </div>
+        </main>
+
+        <script src="../../js/components/component-loader.js"></script>
+        <script src="../../js/components/navbar.js"></script>
+        <script src="jwt-decoder.js"></script>
+    </body>
+</html>
