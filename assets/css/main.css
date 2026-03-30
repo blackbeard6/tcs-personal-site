@@ -1,0 +1,103 @@
+/**
+ * Main CSS - Custom Properties & Base Styles
+ * Personal site for Tucker Simpson
+ */
+
+/* ============================================
+   CSS Custom Properties (Design Tokens)
+   ============================================ */
+:root {
+    /* Colors */
+    --color-bg: #EDF1D6;
+    --color-primary: #40513B;
+    --color-accent: #9DC08B;
+    --color-black: #101010;
+
+    /* Typography */
+    --font-primary: "forma-djr-display", sans-serif;
+    --font-weight-normal: 500;
+    --font-weight-bold: 700;
+
+    /* Spacing */
+    --spacing-xs: 0.5vw;
+    --spacing-sm: 1vw;
+    --spacing-md: 2vw;
+    --spacing-lg: 4vw;
+
+    /* Borders & Shadows */
+    --border-standard: var(--border-width) solid black;
+    --border-width: max(1px, 0.1vw);
+    --border-width-double: calc(var(--border-width) * 2);
+    --box-shadow-inset: 0px 0px 0px var(--border-width) black inset;
+
+    /* Transitions */
+    --transition-fast: 0.3s ease-in-out;
+}
+
+/* ============================================
+   Base Tag Selectors
+   ============================================ */
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--color-bg);
+    min-height: 100vh;
+}
+
+html {
+    min-height: 100vh;
+}
+
+hr {
+    border-color: var(--color-accent);
+    border-style: dotted none none;
+    border-width: 8px;
+    width: 5%;
+}
+
+img {
+    height: 150px;
+}
+
+h1 {
+    color: var(--color-primary);
+    font-family: var(--font-primary);
+    font-weight: var(--font-weight-bold);
+    font-style: normal;
+    font-size: 3.25vw;
+    padding-left: 1vw;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--color-bg);
+}
+
+h3 {
+    color: var(--color-primary);
+}
+
+p {
+    font-family: var(--font-primary);
+    font-weight: var(--font-weight-normal);
+    font-style: normal;
+    font-size: .9vw;
+    letter-spacing: 0.1em;
+    padding: 1vw;
+}
+
+/* ============================================
+   Responsive Typography
+   ============================================ */
+@media only screen and (max-width: 1000px) {
+    h1 {
+        font-size: 5vw;
+    }
+    p {
+        font-family: var(--font-primary);
+        font-weight: var(--font-weight-normal);
+        font-style: normal;
+        font-size: 1.8vw;
+        letter-spacing: 0.1em;
+        padding: 1vw;
+    }
+}

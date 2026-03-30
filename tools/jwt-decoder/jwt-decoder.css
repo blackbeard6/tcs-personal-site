@@ -1,0 +1,83 @@
+/**
+ * JWT Decoder specific styles
+ */
+
+.jwt-output {
+    display: none;
+    margin-top: var(--spacing-md);
+}
+
+.jwt-output.active {
+    display: block;
+}
+
+.jwt-section {
+    margin-bottom: var(--spacing-md);
+    border: var(--border-standard);
+    background-color: white;
+}
+
+.jwt-section-title {
+    font-family: var(--font-primary);
+    font-weight: var(--font-weight-bold);
+    font-size: 1rem;
+    margin: 0;
+    padding: var(--spacing-sm);
+    color: var(--color-bg);
+}
+
+.jwt-header-title {
+    background-color: #e74c3c;
+}
+
+.jwt-payload-title {
+    background-color: #9b59b6;
+}
+
+.jwt-signature-title {
+    background-color: #3498db;
+}
+
+.jwt-section-content {
+    margin: 0;
+    padding: var(--spacing-sm);
+    font-family: monospace;
+    font-size: 13px;
+    white-space: pre-wrap;
+    word-break: break-all;
+    background-color: #f8f9fa;
+    border-top: var(--border-standard);
+}
+
+/* Claim highlighting */
+.jwt-claim {
+    display: block;
+    padding: 2px 0;
+}
+
+.jwt-claim-key {
+    color: #e74c3c;
+}
+
+.jwt-claim-value {
+    color: #27ae60;
+}
+
+.jwt-claim-value.string {
+    color: #27ae60;
+}
+
+.jwt-claim-value.number {
+    color: #3498db;
+}
+
+.jwt-claim-value.boolean {
+    color: #9b59b6;
+}
+
+/* Timestamp conversion */
+.jwt-timestamp {
+    color: #7f8c8d;
+    font-size: 11px;
+    margin-left: 8px;
+}

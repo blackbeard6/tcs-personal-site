@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tool Name | Tucker Simpson</title>
+        <link rel="stylesheet" href="../../assets/css/main.css">
+        <link rel="stylesheet" href="../../assets/css/layout.css">
+        <link rel="stylesheet" href="../../assets/css/components.css">
+        <link rel="stylesheet" href="../../assets/css/tools.css">
+        <link rel="stylesheet" href="https://use.typekit.net/mpl1bva.css">
+        <!-- Optional: tool-specific styles -->
+        <!-- <link rel="stylesheet" href="tool.css"> -->
+    </head>
+    <body style="margin: 0; padding: 0">
+        <!-- Navbar component -->
+        <div data-component="navbar"></div>
+
+        <div class="row">
+            <div class="col-10-20"></div>
+            <div class="col-10-20"></div>
+            <div class="col-10-20"></div>
+            <div class="col-10-20"></div>
+            <div class="col-10-20"></div>
+            <div class="col-10-0"></div>
+            <div class="col-10-0"></div>
+            <div class="col-10-0"></div>
+            <div class="col-10-0"></div>
+            <div class="col-10-0"></div>
+        </div>
+
+        <main class="tool-container">
+            <div class="row">
+                <div class="col-5-10"></div>
+                <div class="tool-content col-40-80">
+                    <h1>Tool Name</h1>
+                    <p class="tool-description">
+                        Brief description of what this tool does and why it's useful.
+                    </p>
+
+                    <div class="tool-interface">
+                        <div class="tool-input-section">
+                            <label for="input">Input:</label>
+                            <textarea id="input" class="tool-textarea" rows="6"
+                                      placeholder="Paste your input here..."></textarea>
+                        </div>
+
+                        <div class="tool-actions">
+                            <button id="process-btn" class="tool-button">Process</button>
+                            <button id="clear-btn" class="tool-button tool-button-secondary">Clear</button>
+                        </div>
+
+                        <div class="tool-output-section">
+                            <label>Output:</label>
+                            <div id="output" class="tool-output"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5-10"></div>
+            </div>
+        </main>
+
+        <script src="../../js/components/component-loader.js"></script>
+        <script src="../../js/components/navbar.js"></script>
+        <script src="tool.js"></script>
+    </body>
+</html>

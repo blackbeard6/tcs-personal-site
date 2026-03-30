@@ -1,0 +1,207 @@
+/**
+ * Layout CSS - Grid System
+ * Float-based grid with aspect ratios
+ */
+
+/* ============================================
+   Base Grid Classes
+   ============================================ */
+[class*="col-"] {
+    float: left;
+    position: relative;
+    box-shadow: var(--box-shadow-inset);
+}
+
+[class*="col-"]:hover {
+    float: left;
+    position: relative;
+    background-color: var(--color-primary);
+    color: var(--color-bg);
+    box-shadow: var(--box-shadow-inset);
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.row:first-child [class*="col-"] {
+    border-top: var(--border-width) solid black;
+}
+
+.grid-background {
+    position: fixed;
+    top: 10vw;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 10vw);
+    overflow: hidden;
+    z-index: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+    .grid-background {
+        top: 20vw;
+        height: calc(100vh - 20vw);
+    }
+}
+
+/* ============================================
+   Column Width Classes
+   ============================================ */
+
+/* 10% width columns */
+[class*="col-10"] {
+    width: 10%;
+    justify-content: center;
+    align-items: center;
+    vertical-align: center;
+    aspect-ratio: 1 / 1;
+}
+
+.col-10 {
+    width: 10%;
+    aspect-ratio: 1 / 2;
+    position: relative;
+    display: flex;
+}
+
+.col-10-0 {
+    width: 10%;
+    aspect-ratio: 1 / 1;
+}
+
+.col-10-20 {
+    width: 10%;
+    aspect-ratio: 1 / 1;
+}
+
+/* 20% width columns */
+.col-20-40 {
+    justify-content: center;
+    align-items: center;
+    vertical-align: center;
+    color: var(--color-primary);
+    display: flex;
+    margin: auto;
+    width: 20%;
+    aspect-ratio: 2 / 1;
+    vertical-align: center;
+}
+
+/* 5% width columns */
+.col-5-10 {
+    width: 5%;
+    aspect-ratio: 1 / 4;
+}
+
+/* 40% width columns */
+.col-3 {
+    width: 40%;
+    aspect-ratio: 2 / 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-4 {
+    width: 40%;
+    aspect-ratio: 2 / 1;
+    position: relative;
+    display: flex;
+}
+
+.col-6 {
+    width: 40%;
+    aspect-ratio: 2 / 1;
+}
+
+.col-40-80 {
+    width: 40%;
+    aspect-ratio: 2 / 1;
+    position: relative;
+    display: flex;
+}
+
+/* Special columns */
+.col-5 {
+    width: 10%;
+    aspect-ratio: 1 / 2;
+    position: relative;
+    display: flex;
+}
+
+.col-11 {
+    display: none;
+}
+
+.col-12 {
+    width: 10%;
+    aspect-ratio: 1 / 2;
+    position: relative;
+    display: flex;
+}
+
+.col-13 {
+    width: 5%;
+    aspect-ratio: 1 / 4;
+}
+
+/* ============================================
+   Responsive Grid
+   ============================================ */
+@media only screen and (max-width: 1000px) {
+    .col-10-20 {
+        width: 20%;
+        aspect-ratio: 1 / 1;
+    }
+
+    .col-10-0 {
+        display: none;
+    }
+
+    .col-20-40 {
+        width: 40%;
+        aspect-ratio: 2 / 1;
+    }
+
+    .col-20-40.active {
+        display: none;
+    }
+
+    .col-40-80 {
+        width: 80%;
+        aspect-ratio: 2 / 1;
+    }
+
+    .col-5 {
+        width: 100%;
+        aspect-ratio: 10 / 1;
+    }
+
+    .col-6 {
+        width: 80%;
+        aspect-ratio: 2 / 1;
+    }
+
+    .col-5-10 {
+        width: 10%;
+        aspect-ratio: 1 / 4;
+    }
+
+    .col-11 {
+        width: 10%;
+        aspect-ratio: 1 / 4;
+        display: flex;
+    }
+
+    .col-12 {
+        display: none;
+    }
+
+    .col-13 {
+        display: none;
+    }
+}

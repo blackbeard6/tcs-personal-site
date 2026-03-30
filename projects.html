@@ -2,71 +2,17 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Projects</title>
-        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projects | Tucker Simpson</title>
+        <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="stylesheet" href="assets/css/layout.css">
+        <link rel="stylesheet" href="assets/css/components.css">
         <link rel="stylesheet" href="https://use.typekit.net/mpl1bva.css">
     </head>
-    <body style="margin: 0;padding: 0">
-        <div class="header">
-            <!-- This disappears on active. -->
-            <div class="col-20-40">
-                <div class="nav-name">
-                    TuckerSimpson
-                    <a href="index.html"><span class="link"></span></a>
-                </div>
-            </div>
-            <div class="col-10-0"></div>
-            <div class="col-10-0"></div>
-            <div class="col-10-0"></div>
-            <div class="col-10-0"></div>
-            <!-- switch to 10-20, do not display anything when not active -->
-            <div class="nav-10-20-hidden" >
-                <!-- <div id="navbar-item"></div> -->
-                <div class="nav-item">
-                    <a href="about.html">
-                        <div class="nav-text">About</div> 
-                        <span class="link"></span>
-                </div>
-            </div>
-            <!-- switch to 10-20, do not display anything when not active -->
-            <div class="nav-10-20-hidden">
-                <!-- <div id="navbar-item"></div> -->
-                <div class="nav-item">
-                    <a href="projects.html">
-                        <div class="nav-text">Projects</div>
-                        <span class="link"></span>
-                    </a>
-                </div>
-            </div>
-            <!-- switch to 10-20, hide nav-item when not active -->
-            <div class="nav-10-20">
-                <div class="nav-item">
-                    <a href="https://www.linkedin.com/in/tuckersimpson/">
-                        <img src="images/linkedinLogo.png" alt="LinkedIn" id="navbar-img">
-                        <span class="link"></span>
-                    </a>
-                </div>
-            </div>
-            <!-- switch to 10-20, hide nav-item when not active -->
-             <!-- switch to 10-20, toggle all nav-item to active when hamburger is clicked -->
-            <div class="nav-10-20">
-                <!-- nav item is messing this stuff up. -->
-                <div class="nav-item">
-                    <a href="https://github.com/blackbeard6">
-                        <img src="images/githubLogo.png" alt="Github" id="navbar-img">
-                        <span class="link"></span>
-                    </a>
-                </div>
-            </div>
-            <!-- nav-0-20 here to hold hamburger menu. -->
-            <div class="nav-0-20">
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-            </div>
-        </div>
+    <body style="margin: 0; padding: 0">
+        <!-- Navbar component -->
+        <div data-component="navbar"></div>
+
         <div class="row">
             <div class="col-10-20"></div>
             <div class="col-10-20"></div>
@@ -84,7 +30,7 @@
             <div class="col-6">
                 <h1>
                     GreenLight
-                    <a href="https://github.com/dartmouth-greenlight/GreenLight"> <span class="link"></span></a>
+                    <a href="https://github.com/dartmouth-greenlight/GreenLight"><span class="link"></span></a>
                 </h1>
                 <p>
                     Introducing GreenLight: an exceptional native iOS application meticulously crafted by a classmate and me. This innovative app harnesses the power of OCR technology to seamlessly scan Dartmouth Student IDs, revolutionizing the way we manage event entry and enhance security protocols.
@@ -92,15 +38,15 @@
                     With "Greenlight," event organizers can effortlessly track guest entrances while simultaneously enforcing security measures, including real-time verification against a comprehensive event blacklist.
 
                     Won second place in the Empowerment category at HackDartmouth VII in April 2022.
-                </p>                
-            </div> 
+                </p>
+            </div>
             <div class="col-11"></div>
-            <div class="col-5"></div> 
+            <div class="col-5"></div>
             <div class="col-11"></div>
             <div class="col-6">
                 <h1>
                     BotHarmon
-                    <a href="https://github.com/blackbeard6/BotHarmon"> <span class="link"></span></a>
+                    <a href="https://github.com/blackbeard6/BotHarmon"><span class="link"></span></a>
                 </h1>
                 <p>
                     Presenting a Python-based artificial intelligence project that indulges my passion for chess: a formidable AI designed to take on opponents on the chessboard.
@@ -108,12 +54,11 @@
                     Harnessing the potent combination of Minimax search and fortified with Alpha-Beta pruning, transposition tables, and judicious lazy evaluation, this AI is a true strategic marvel. This project is on-going. My current focus is on enhancing performance by parallelizing the search, and I'm diligently assembling a comprehensive library of openings and endgame strategies.
 
                     As it stands, this AI boasts an approximate ELO rating of 1500. Stay tuned for exciting developments.
-                </p>                
-            </div> 
-            
+                </p>
+            </div>
             <div class="col-5-10"></div>
         </div>
-                        
+
         <div class="row">
             <div class="col-10-20"></div>
             <div class="col-10-20"></div>
@@ -129,30 +74,29 @@
         <div class="row">
             <div class="col-5-10"></div>
             <div class="col-6">
-                
                 <h1>
                     Tiny Search Engine
                 </h1>
                 <p>
                     A tiny search engine for Unix CLI featuring a web page crawler, indexer, and querier, complete with custom set and hash table modules for efficient data management.
-                    
+
                     By utilizing Boolean logic for parsing and integrating web scraping capabilities to retrieve linked URLs, I provided ranked search results for user queries.
-                </p>                
-            </div> 
+                </p>
+            </div>
             <div class="col-11"></div>
-            <div class="col-5"></div> 
+            <div class="col-5"></div>
             <div class="col-11"></div>
             <div class="col-6">
                 <h1>
                     Hand Written Digit Classifier
-                    <a href="https://github.com/blackbeard6/HandwrittenDigitClassifier"> <span class="link"></span></a>
+                    <a href="https://github.com/blackbeard6/HandwrittenDigitClassifier"><span class="link"></span></a>
                 </h1>
                 <p>
                     I employed NumPy and Python to create an artificial neural network entirely from scratch. This project was a deep dive into neural network architecture and training.
 
                     The network includes alternating linear and non-linear activation layers followed by a loss function. The model's parameters are fine-tuned using gradient descent.
-                </p>                
-            </div> 
+                </p>
+            </div>
             <div class="col-5-10"></div>
         </div>
         <div class="row">
@@ -167,6 +111,8 @@
             <div class="col-10-0"></div>
             <div class="col-10-0"></div>
         </div>
-        <script src="navbar.js"></script>
+
+        <script src="js/components/component-loader.js"></script>
+        <script src="js/components/navbar.js"></script>
     </body>
 </html>

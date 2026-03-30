@@ -1,0 +1,198 @@
+/**
+ * Tools CSS - Shared styles for interactive tools/demos
+ */
+
+/* ============================================
+   Tool Page Layout
+   ============================================ */
+.tool-container {
+    min-height: 100vh;
+}
+
+.tool-content {
+    padding: var(--spacing-md);
+}
+
+.tool-description {
+    margin-bottom: var(--spacing-lg);
+    max-width: 800px;
+}
+
+/* ============================================
+   Tool Interface
+   ============================================ */
+.tool-interface {
+    background-color: var(--color-bg);
+    border: var(--border-standard);
+    padding: var(--spacing-md);
+    max-width: 900px;
+}
+
+.tool-input-section,
+.tool-output-section {
+    margin-bottom: var(--spacing-md);
+}
+
+.tool-input-section label,
+.tool-output-section label {
+    display: block;
+    font-family: var(--font-primary);
+    font-weight: var(--font-weight-bold);
+    font-size: 1.2vw;
+    margin-bottom: var(--spacing-xs);
+    color: var(--color-primary);
+}
+
+.tool-textarea {
+    width: 100%;
+    font-family: monospace;
+    font-size: 14px;
+    padding: var(--spacing-sm);
+    border: var(--border-standard);
+    background-color: white;
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+.tool-textarea:focus {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+}
+
+/* ============================================
+   Tool Buttons
+   ============================================ */
+.tool-actions {
+    margin: var(--spacing-md) 0;
+}
+
+.tool-button {
+    font-family: var(--font-primary);
+    font-weight: var(--font-weight-bold);
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--color-primary);
+    color: var(--color-bg);
+    border: var(--border-standard);
+    cursor: pointer;
+    transition: var(--transition-fast);
+    margin-right: var(--spacing-sm);
+}
+
+.tool-button:hover {
+    background-color: var(--color-bg);
+    color: var(--color-primary);
+}
+
+.tool-button:focus {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+}
+
+.tool-button-secondary {
+    background-color: var(--color-bg);
+    color: var(--color-primary);
+}
+
+.tool-button-secondary:hover {
+    background-color: var(--color-primary);
+    color: var(--color-bg);
+}
+
+/* ============================================
+   Tool Output
+   ============================================ */
+.tool-output {
+    min-height: 100px;
+    padding: var(--spacing-sm);
+    border: var(--border-standard);
+    background-color: white;
+    font-family: monospace;
+    font-size: 14px;
+    overflow-x: auto;
+}
+
+.tool-output pre {
+    margin: 0;
+    white-space: pre-wrap;
+    word-break: break-all;
+}
+
+.tool-output.error {
+    border-color: #c0392b;
+}
+
+.tool-error {
+    color: #c0392b;
+    font-weight: bold;
+}
+
+.tool-success {
+    color: #27ae60;
+    font-weight: bold;
+}
+
+/* ============================================
+   Tools Listing Page
+   ============================================ */
+.tools-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tool-card {
+    margin-bottom: var(--spacing-lg);
+    padding: var(--spacing-md);
+    border: var(--border-standard);
+    background-color: var(--color-bg);
+    transition: var(--transition-fast);
+}
+
+.tool-card:hover {
+    background-color: var(--color-primary);
+    color: var(--color-bg);
+}
+
+.tool-card:hover h2,
+.tool-card:hover p {
+    color: var(--color-bg);
+}
+
+.tool-card a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.tool-card h2 {
+    font-family: var(--font-primary);
+    font-weight: var(--font-weight-bold);
+    font-size: 2vw;
+    margin: 0 0 var(--spacing-sm) 0;
+    color: var(--color-primary);
+}
+
+.tool-card p {
+    margin: 0;
+    color: var(--color-primary);
+}
+
+/* ============================================
+   Responsive
+   ============================================ */
+@media only screen and (max-width: 1000px) {
+    .tool-input-section label,
+    .tool-output-section label {
+        font-size: 2.5vw;
+    }
+
+    .tool-card h2 {
+        font-size: 4vw;
+    }
+
+    .tool-button {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+}
