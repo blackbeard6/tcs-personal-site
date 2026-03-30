@@ -2,161 +2,111 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Tucker Simpson</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="stylesheet" href="assets/css/layout.css">
+        <link rel="stylesheet" href="assets/css/components.css">
         <link rel="stylesheet" href="https://use.typekit.net/mpl1bva.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
-    <body style="margin: 0;padding: 0">
-        <div class="header">
-            <!-- This disappears on active. -->
-            <div class="col-20-40">
-                <div class="nav-name">
-                    TuckerSimpson
-                    <a href="index.html"><span class="link"></span></a>
-                </div>
-            </div>
-            <div class="col-10-0"></div>
-            <div class="col-10-0"></div>
-            <div class="col-10-0"></div>
-            <div class="col-10-0"></div>
-            <!-- switch to 10-20, do not display anything when not active -->
-            <div class="nav-10-20-hidden" >
-                <!-- <div id="navbar-item"></div> -->
-                <div class="nav-item">
-                    <a href="about.html">
-                        <div class="nav-text">About</div> 
-                        <span class="link"></span>
-                </div>
-            </div>
-            <!-- switch to 10-20, do not display anything when not active -->
-            <div class="nav-10-20-hidden">
-                <!-- <div id="navbar-item"></div> -->
-                <div class="nav-item">
-                    <a href="projects.html">
-                        <div class="nav-text">Projects</div>
-                        <span class="link"></span>
-                    </a>
-                </div>
-            </div>
-            <!-- switch to 10-20, hide nav-item when not active -->
-            <div class="nav-10-20">
-                <div class="nav-item">
-                    <a href="https://www.linkedin.com/in/tuckersimpson/">
-                        <img src="images/linkedinLogo.png" alt="LinkedIn" id="navbar-img">
-                        <span class="link"></span>
-                    </a>
-                </div>
-            </div>
-            <!-- switch to 10-20, hide nav-item when not active -->
-             <!-- switch to 10-20, toggle all nav-item to active when hamburger is clicked -->
-            <div class="nav-10-20">
-                <!-- nav item is messing this stuff up. -->
-                <div class="nav-item">
-                    <a href="https://github.com/blackbeard6">
-                        <img src="images/githubLogo.png" alt="Github" id="navbar-img">
-                        <span class="link"></span>
-                    </a>
-                </div>
-            </div>
-            <!-- nav-0-20 here to hold hamburger menu. -->
-            <div class="nav-0-20">
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-10-20"></div> 
-            <div class="col-10-20"></div> 
-            <div class="col-10-20"></div>
-            <div class="col-10-20"></div>
-            <div class="col-10-20"></div>
-            <div class="col-10-20"></div>
-            <div class="col-10-20"></div> 
-            <div class="col-10-20"></div> 
-            <div class="col-10-20"></div> 
-            <div class="col-10-20"></div> 
-        </div>
-        <div class="row">
-            <div class="col-10-20"></div>
-            <div class="col-10-20"></div>
-            <div class="col-10-20"></div>
-            <div class="col-10-20"></div>
-            <div class="welcome-msg">
-                Welcome.
-            </div>
+    <body style="margin: 0; padding: 0">
+        <!-- Navbar component -->
+        <div data-component="navbar"></div>
 
-            <div class="col-10-20"></div>
-            <div class="col-10-0"></div>
-            <div class="col-10-0"></div>
-            <div class="col-10-0"></div>
-            <div class="col-10-0"></div>
-            <div class="col-10-0"></div>
+        <!-- Welcome message -->
+        <div class="welcome-msg">
+            Welcome.
         </div>
-        <div class="row">
-            <div class="col-10-20"></div> 
-            <div class="col-10-20"></div> 
-            <div class="col-10-20"></div> 
-            <div class="col-10-20"></div> 
-            <div class="col-10-20"></div> 
-            <div class="col-10-0"></div>
-            <div class="col-10-0"></div> 
-            <div class="col-10-0"></div> 
-            <div class="col-10-0"></div> 
-            <div class="col-10-0"></div>
-        </div>
-        <div class="row">
-            <div class="col-10-20"></div>
-            <div class="col-10-20"></div>
-            <div class="col-10-20"></div>
-            <div class="col-10-20"></div>
-            <div class="col-10-20"></div>
-            <div class="col-10-0"></div>
-            <div class="col-10-0"></div>
-            <div class="col-10-0"></div>
-            <div class="col-10-0"></div>
-            <div class="col-10-0"></div>
-        </div>
-        <div class="row">
-            <div class="col-10-20"></div>
-            <div class="col-10-20"></div>
-            <div class="col-10-20"></div>
-            <div class="col-10-20"></div>
-            <div class="col-10-20"></div>
-            <div class="col-10-0"></div>
-            <div class="col-10-0"></div>
-            <div class="col-10-0"></div>
-            <div class="col-10-0"></div>
-            <div class="col-10-0"></div>
-        </div>
-        <div class="row">
-            <div class="col-10-20"></div>
-            <div class="col-10-20"></div>
-            <div class="col-10-20"></div>
-            <div class="col-10-20"></div>
-            <div class="col-10-20"></div>
-            <div class="col-10-0"></div>
-            <div class="col-10-0"></div>
-            <div class="col-10-0"></div>
-            <div class="col-10-0"></div>
-            <div class="col-10-0"></div>
-        </div>
-        <div class="row">
-            <div class="col-10-20"></div>
-            <div class="col-10-20"></div>
-            <div class="col-10-20"></div>
-            <div class="col-10-20"></div>
-            <div class="col-10-20"></div>
-            <div class="col-10-0"></div>
-            <div class="col-10-0"></div>
-            <div class="col-10-0"></div>
-            <div class="col-10-0"></div>
-            <div class="col-10-0"></div>
-        </div>
-        <script src="navbar.js"></script>
 
+        <!-- Background grid -->
+        <div class="grid-background">
+        <div class="row">
+            <div class="col-10-20"></div>
+            <div class="col-10-20"></div>
+            <div class="col-10-20"></div>
+            <div class="col-10-20"></div>
+            <div class="col-10-20"></div>
+            <div class="col-10-20"></div>
+            <div class="col-10-20"></div>
+            <div class="col-10-20"></div>
+            <div class="col-10-20"></div>
+            <div class="col-10-20"></div>
+        </div>
+        <div class="row">
+            <div class="col-10-20"></div>
+            <div class="col-10-20"></div>
+            <div class="col-10-20"></div>
+            <div class="col-10-20"></div>
+            <div class="col-10-20"></div>
+            <div class="col-10-0"></div>
+            <div class="col-10-0"></div>
+            <div class="col-10-0"></div>
+            <div class="col-10-0"></div>
+            <div class="col-10-0"></div>
+        </div>
+        <div class="row">
+            <div class="col-10-20"></div>
+            <div class="col-10-20"></div>
+            <div class="col-10-20"></div>
+            <div class="col-10-20"></div>
+            <div class="col-10-20"></div>
+            <div class="col-10-0"></div>
+            <div class="col-10-0"></div>
+            <div class="col-10-0"></div>
+            <div class="col-10-0"></div>
+            <div class="col-10-0"></div>
+        </div>
+        <div class="row">
+            <div class="col-10-20"></div>
+            <div class="col-10-20"></div>
+            <div class="col-10-20"></div>
+            <div class="col-10-20"></div>
+            <div class="col-10-20"></div>
+            <div class="col-10-0"></div>
+            <div class="col-10-0"></div>
+            <div class="col-10-0"></div>
+            <div class="col-10-0"></div>
+            <div class="col-10-0"></div>
+        </div>
+        <div class="row">
+            <div class="col-10-20"></div>
+            <div class="col-10-20"></div>
+            <div class="col-10-20"></div>
+            <div class="col-10-20"></div>
+            <div class="col-10-20"></div>
+            <div class="col-10-0"></div>
+            <div class="col-10-0"></div>
+            <div class="col-10-0"></div>
+            <div class="col-10-0"></div>
+            <div class="col-10-0"></div>
+        </div>
+        <div class="row">
+            <div class="col-10-20"></div>
+            <div class="col-10-20"></div>
+            <div class="col-10-20"></div>
+            <div class="col-10-20"></div>
+            <div class="col-10-20"></div>
+            <div class="col-10-0"></div>
+            <div class="col-10-0"></div>
+            <div class="col-10-0"></div>
+            <div class="col-10-0"></div>
+            <div class="col-10-0"></div>
+        </div>
+        <div class="row">
+            <div class="col-10-20"></div>
+            <div class="col-10-20"></div>
+            <div class="col-10-20"></div>
+            <div class="col-10-20"></div>
+            <div class="col-10-20"></div>
+            <div class="col-10-0"></div>
+            <div class="col-10-0"></div>
+            <div class="col-10-0"></div>
+            <div class="col-10-0"></div>
+            <div class="col-10-0"></div>
+        </div>
+        </div>
+
+        <script src="js/components/component-loader.js"></script>
+        <script src="js/components/navbar.js"></script>
     </body>
 </html>

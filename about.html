@@ -2,71 +2,71 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>About</title>
-        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About | Tucker Simpson</title>
+        <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="stylesheet" href="assets/css/layout.css">
+        <link rel="stylesheet" href="assets/css/components.css">
         <link rel="stylesheet" href="https://use.typekit.net/mpl1bva.css">
     </head>
-    <body style="margin: 0;padding: 0">
-        <div class="header">
-            <!-- This disappears on active. -->
-            <div class="col-20-40">
-                <div class="nav-name">
-                    TuckerSimpson
-                    <a href="index.html"><span class="link"></span></a>
+    <body style="margin: 0; padding: 0">
+        <!-- Navbar component -->
+        <div data-component="navbar"></div>
+
+        <!-- Floating content panels -->
+        <div class="floating-panel floating-panel-left">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="assets/images/photos/cardronaImg.jpg" style="width:100%">
+                    <div class="slide-caption">Cardrona</div>
                 </div>
-            </div>
-            <div class="col-10-0"></div>
-            <div class="col-10-0"></div>
-            <div class="col-10-0"></div>
-            <div class="col-10-0"></div>
-            <!-- switch to 10-20, do not display anything when not active -->
-            <div class="nav-10-20-hidden" >
-                <!-- <div id="navbar-item"></div> -->
-                <div class="nav-item">
-                    <a href="about.html">
-                        <div class="nav-text">About</div> 
-                        <span class="link"></span>
+                <div class="mySlides fade">
+                    <img src="assets/images/photos/milfordImg.jpg" style="width:100%">
+                    <div class="slide-caption">Milford Sound</div>
                 </div>
-            </div>
-            <!-- switch to 10-20, do not display anything when not active -->
-            <div class="nav-10-20-hidden">
-                <!-- <div id="navbar-item"></div> -->
-                <div class="nav-item">
-                    <a href="projects.html">
-                        <div class="nav-text">Projects</div>
-                        <span class="link"></span>
-                    </a>
+                <div class="mySlides fade">
+                    <img src="assets/images/photos/tongariro2.jpg" style="width:100%">
+                    <div class="slide-caption">Tongariro Crossing</div>
                 </div>
-            </div>
-            <!-- switch to 10-20, hide nav-item when not active -->
-            <div class="nav-10-20">
-                <div class="nav-item">
-                    <a href="https://www.linkedin.com/in/tuckersimpson/">
-                        <img src="images/linkedinLogo.png" alt="LinkedIn" id="navbar-img">
-                        <span class="link"></span>
-                    </a>
+                <div class="mySlides fade">
+                    <img src="assets/images/photos/mtfoxImg.jpg" style="width:100%">
+                    <div class="slide-caption">Mount Fox</div>
                 </div>
-            </div>
-            <!-- switch to 10-20, hide nav-item when not active -->
-             <!-- switch to 10-20, toggle all nav-item to active when hamburger is clicked -->
-            <div class="nav-10-20">
-                <!-- nav item is messing this stuff up. -->
-                <div class="nav-item">
-                    <a href="https://github.com/blackbeard6">
-                        <img src="images/githubLogo.png" alt="Github" id="navbar-img">
-                        <span class="link"></span>
-                    </a>
+                <div class="mySlides fade">
+                    <img src="assets/images/photos/tongariroImg.jpg" style="width:100%">
+                    <div class="slide-caption">Tongariro Crossing</div>
                 </div>
-            </div>
-            <!-- nav-0-20 here to hold hamburger menu. -->
-            <div class="nav-0-20">
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
+                <div class="mySlides fade">
+                    <img src="assets/images/photos/abelTasmanImg.jpg" style="width:100%">
+                    <div class="slide-caption">Abel Tasman</div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="assets/images/photos/mrsdaisyImg.jpg" style="width:100%">
+                    <div class="slide-caption">The Ride</div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="assets/images/photos/roysPeak.jpg" style="width:100%">
+                    <div class="slide-caption">Roy's Peak</div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="assets/images/photos/seaKayakImg.jpg" style="width:100%">
+                    <div class="slide-caption">Banks Peninsula</div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="assets/images/photos/wanakatreeImg.jpg" style="width:100%">
+                    <div class="slide-caption">Lake Wanaka</div>
                 </div>
             </div>
         </div>
+
+        <div class="floating-panel floating-panel-right">
+            <p>
+                Hi, I'm Tucker. I'm a software engineer currently working on identity and authentication at Netflix. This site is a work in progress. 
+            </p>
+        </div>
+
+        <!-- Background grid -->
+        <div class="grid-background">
         <div class="row">
             <div class="col-10-20"></div>
             <div class="col-10-20"></div>
@@ -80,107 +80,16 @@
             <div class="col-10-0"></div>
         </div>
         <div class="row">
-            <div class="col-5-10"></div>
-            <div class="col-40-80"> 
-                <div class="thin-text">
-                    Adventures in New Zealand
-                </div>
-                <!-- <h1>Adventures in New Zealand</h1> -->
-
-                <div class="slideshow-container">
-
-                    <div class="mySlides fade">
-                      <img src="images/cardronaImg.jpg" style="width:100%">
-                      <div class="slide-caption">Cardrona</div>
-                    </div>
-                    
-                    <div class="mySlides fade">
-                      <img src="images/milfordImg.jpg" style="width:100%">
-                      <div class="slide-caption">Milford Sound</div>
-                    </div>
-                    
-                    <div class="mySlides fade">
-                      <img src="images/tongariro2.jpg" style="width:100%">
-                      <div class="slide-caption">Tongariro Crossing</div>
-                    </div>
-
-                    <div class="mySlides fade">
-                        <img src="images/mtfoxImg.jpg" style="width:100%">
-                        <div class="slide-caption">Mount Fox</div>
-                    </div>
-
-                    <div class="mySlides fade">
-                        <img src="images/tongariroImg.jpg" style="width:100%">
-                        <div class="slide-caption">Tongariro Crossing</div>
-                    </div>
-
-                    <div class="mySlides fade">
-                        <img src="images/abelTasmanImg.jpg" style="width:100%">
-                        <div class="slide-caption">Abel Tasman</div>
-                    </div>
-
-                    <div class="mySlides fade">
-                        <img src="images/mrsdaisyImg.jpg" style="width:100%">
-                        <div class="slide-caption">The Ride</div>
-                    </div>
-
-                    <div class="mySlides fade">
-                        <img src="images/roysPeak.jpg" style="width:100%">
-                        <div class="slide-caption">Roy's Peak</div>
-                    </div>
-
-                    <div class="mySlides fade">
-                        <img src="images/seaKayakImg.jpg" style="width:100%">
-                        <div class="slide-caption">Banks Peninsula</div>
-                    </div>
-
-                    <div class="mySlides fade">
-                        <img src="images/wanakatreeImg.jpg" style="width:100%">
-                        <div class="slide-caption">Lake Wanaka</div>
-                    </div>
-
-                </div>
-
-                <br>
-
-                <script>
-                    let slideIndex = 0;
-                    showSlides();
-
-                    function showSlides() {
-                    let i;
-                    let slides = document.getElementsByClassName("mySlides");
-                    for (i = 0; i < slides.length; i++) {
-                        slides[i].style.display = "none";  
-                    }
-                    slideIndex++;
-                    if (slideIndex > slides.length) {slideIndex = 1}    
-
-                    slides[slideIndex-1].style.display = "block";  
-                    setTimeout(showSlides, 4000); // Change image every 4 seconds
-                    }
-                </script>
-
-                
-            </div>
-            <div class="col-11"></div>
-
-            <div class="col-5"></div> 
-            
-            <div class="col-11"></div>
-            <div class="col-40-80">
-                <h1>About Me</h1>
-                <p>
-                    I'm a senior at Dartmouth College, passionate about computer science and creating innovative solutions. Originally from New Jersey, I share my home with two amazing sisters and my loyal companion, Norman the dog. When I'm not coding, I'm exploring my love for sports, the great outdoors, and traveling.
-
-                    One of my recent adventures took me on an exciting road trip across New Zealand with some fellow classmates. On the left, you can browse through captivating photos taken by my friend Owen during our journey.
-
-                    My coding journey includes experience in mobile development and proficiency in languages such as C, Java, Python, and Swift. Additionally, I enjoy dabbling in design using Figma.
-
-                    My main aspiration is to make cutting-edge AI technology more accessible to users, and I'm excited about the possibilities ahead. Thanks for stopping by my page!
-                </p>                
-            </div> 
-            <div class="col-5-10"></div>
+            <div class="col-10-20"></div>
+            <div class="col-10-20"></div>
+            <div class="col-10-20"></div>
+            <div class="col-10-20"></div>
+            <div class="col-10-20"></div>
+            <div class="col-10-0"></div>
+            <div class="col-10-0"></div>
+            <div class="col-10-0"></div>
+            <div class="col-10-0"></div>
+            <div class="col-10-0"></div>
         </div>
         <div class="row">
             <div class="col-10-20"></div>
@@ -206,6 +115,82 @@
             <div class="col-10-0"></div>
             <div class="col-10-0"></div>
         </div>
-        <script src="navbar.js"></script>
+        <div class="row">
+            <div class="col-10-20"></div>
+            <div class="col-10-20"></div>
+            <div class="col-10-20"></div>
+            <div class="col-10-20"></div>
+            <div class="col-10-20"></div>
+            <div class="col-10-0"></div>
+            <div class="col-10-0"></div>
+            <div class="col-10-0"></div>
+            <div class="col-10-0"></div>
+            <div class="col-10-0"></div>
+        </div>
+        <div class="row">
+            <div class="col-10-20"></div>
+            <div class="col-10-20"></div>
+            <div class="col-10-20"></div>
+            <div class="col-10-20"></div>
+            <div class="col-10-20"></div>
+            <div class="col-10-0"></div>
+            <div class="col-10-0"></div>
+            <div class="col-10-0"></div>
+            <div class="col-10-0"></div>
+            <div class="col-10-0"></div>
+        </div>
+        <div class="row">
+            <div class="col-10-20"></div>
+            <div class="col-10-20"></div>
+            <div class="col-10-20"></div>
+            <div class="col-10-20"></div>
+            <div class="col-10-20"></div>
+            <div class="col-10-0"></div>
+            <div class="col-10-0"></div>
+            <div class="col-10-0"></div>
+            <div class="col-10-0"></div>
+            <div class="col-10-0"></div>
+        </div>
+        <div class="row">
+            <div class="col-10-20"></div>
+            <div class="col-10-20"></div>
+            <div class="col-10-20"></div>
+            <div class="col-10-20"></div>
+            <div class="col-10-20"></div>
+            <div class="col-10-0"></div>
+            <div class="col-10-0"></div>
+            <div class="col-10-0"></div>
+            <div class="col-10-0"></div>
+            <div class="col-10-0"></div>
+        </div>
+        <div class="row">
+            <div class="col-10-20"></div>
+            <div class="col-10-20"></div>
+            <div class="col-10-20"></div>
+            <div class="col-10-20"></div>
+            <div class="col-10-20"></div>
+            <div class="col-10-0"></div>
+            <div class="col-10-0"></div>
+            <div class="col-10-0"></div>
+            <div class="col-10-0"></div>
+            <div class="col-10-0"></div>
+        </div>
+        <div class="row">
+            <div class="col-10-20"></div>
+            <div class="col-10-20"></div>
+            <div class="col-10-20"></div>
+            <div class="col-10-20"></div>
+            <div class="col-10-20"></div>
+            <div class="col-10-0"></div>
+            <div class="col-10-0"></div>
+            <div class="col-10-0"></div>
+            <div class="col-10-0"></div>
+            <div class="col-10-0"></div>
+        </div>
+        </div>
+
+        <script src="js/components/component-loader.js"></script>
+        <script src="js/components/navbar.js"></script>
+        <script src="js/components/slideshow.js"></script>
     </body>
 </html>
